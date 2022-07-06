@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int EasiestCalc(char* exp) { //работает только с однозначными числами в выражении
+int EasiestCalc(char* exp) { //works only with single digit numbers, the first version of "Calc" function
 	if (exp[3] == '=') {
 		if (exp[4] == 'x') { return Subcalc(exp[0], exp[1], exp[2]); }
 		if (exp[2] == 'x') { return Subcalc(exp[0], exp[1], exp[4]); }
