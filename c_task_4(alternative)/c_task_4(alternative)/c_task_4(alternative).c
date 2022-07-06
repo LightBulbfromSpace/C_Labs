@@ -5,7 +5,7 @@
 
 int main()
 {
-	//In_out_MuseumTest();
+	In_out_MuseumTest();
 	SimpleKettlebellsTest();
 	return 0;
 }
