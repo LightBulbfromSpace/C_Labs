@@ -12,9 +12,10 @@ int main()
 {
     FILE* myfile;
     myfile = fopen("BogeyBeast.txt", "r");
-    printf("%d\n", Counter_of_words(myfile));
+    printf("Words in current text: %d\n\n", Counter_of_words(myfile));
     myfile = fclose(myfile);
     myfile = fopen("BogeyBeast.txt", "r");
+    printf("Inverted text:\n");
     Inversion_of_text(myfile);
     return 0;
 }
