@@ -40,7 +40,7 @@ _Bool SimpleNumber(int num) {
 	return 1;
 }
 
-int SimpleKettlebells(int n, int count)
+int SimpleKettlebellsRecursion(int n, int count)
 {
 	int k = n, z = 0;
 	do k++; while (!SimpleNumber(k));
@@ -50,7 +50,12 @@ int SimpleKettlebells(int n, int count)
 		count++;
 	}
 	if (z > 1)
-		return SimpleKettlebells(z - 1, count);
+		return SimpleKettlebellsRecursion(z - 1, count);
 	return count;
+}
+
+int SimpleKettlebells(int n)
+{
+	return SimpleKettlebellsRecursion(n, 0);
 }
 
