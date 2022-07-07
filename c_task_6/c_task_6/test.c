@@ -21,7 +21,6 @@ void hopcostTest()
 	want = 2;
 	Check("ABCDEIJKL", 4, want);
 
-	//"ABABBCACBC", step = 2
 	want = 2;
 	Check("ABABBCACBC", 2, want);
 
@@ -36,6 +35,12 @@ void hopcostTest()
 	//"ABCADBACCA"
 	want = 0;
 	Check("ABCADBACCA", 3, want);
+
+	//"ABCDDBBCABBACCADEA", step = 4
+	want = 2;
+	Check("ABGREEBAGGA", 4, want);
+
+	//"ABABBCACBC", step = 2
 
 	//"ABCDDBBCABBACCADEA", step = 3
 	want = 3;
