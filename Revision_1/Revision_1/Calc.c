@@ -3,7 +3,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int EasiestCalc(char* exp) { //works only with single digit numbers, the first version of "Calc" function
+int Subcalc(char a, char symb, char b);
+char SymbChange(char symb);
+
+int EasiestCalc(char* exp) { //работает только с однозначными числами в выражении
 	if (exp[3] == '=') {
 		if (exp[4] == 'x') { return Subcalc(exp[0], exp[1], exp[2]); }
 		if (exp[2] == 'x') { return Subcalc(exp[0], exp[1], exp[4]); }
@@ -29,6 +32,8 @@ char SymbChange(char symb) {
 	if (symb == '*' || symb == '/') { return 89 - symb; }
 	return 88 - symb;
 }
+
+int NewSubcalc(char* num1, char symb, char* num2, _Bool NumCh, _Bool flag);
 
 int Calc(char* exp) 
 {
@@ -61,7 +66,7 @@ int Calc(char* exp)
 		memcpy(num2, &exp[indexE + 1], strlen(exp) - indexE - 1);
 		num2[strlen(exp) - indexE - 1] = '\0';
 		if (exp[indexO] == '+' || exp[indexO] == '*') { SymCh = 1; NumCh = 1; }
-		if (exp[indexO] == '%') { flag = 1;  }
+		if (exp[indexO] == '%') { flag = 1; }
 	}
 	if (indexO < indexE && indexE < indexX) { //#4
 		memcpy(num1, &exp[0], indexO);
