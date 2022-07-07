@@ -17,6 +17,8 @@ void parenthesesCheckTest()
     bool want;
     int num_of_test = 0;
     int score_count = 0;
+    
+    printf("parenthesesCheckTests\n");
 
     //test 1 for "2+3*(a-b)"
     want = true;
@@ -76,6 +78,8 @@ void atoiTest()
     int want;
     int num_of_test = 0;
     int score_count = 0;
+    
+    printf("atoiTests\n");
 
     //test 1 for "555"
     want = 555;
