@@ -29,7 +29,7 @@ void In_out_MuseumTest()
 
 void Check(int n, int want)
 {
-	int got = SimpleKettlebells(n, 0);
+	int got = SimpleKettlebells(n);
 	if (got != want)
 		printf(" got %d but want %d\n", got, want);
 	else
