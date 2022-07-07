@@ -18,5 +18,19 @@
     <ClCompile Include="c_task_2.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="test.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="functions.c">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
